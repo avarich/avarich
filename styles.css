@@ -108,7 +108,7 @@ section h3{
     font-size: 32px;
     font-weight: 800;
     display: inline-block;
-    margin-right: 8px;
+    margin-right: 160px;
     margin-bottom: 15px; 
  
 }
@@ -164,7 +164,8 @@ section bigp{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
     display: block;
     float: left;      
-    margin-left: 200px; /* Adds space between the image and the text */
+    margin-left: 170px; /* Adds space between the image and the text */
+    
 }
 
 /* Activities content styling */
@@ -175,8 +176,8 @@ section bigp{
     font-size: 22px;
     font-weight: 450;
     display: inline-block;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 150px;
+ 
   
 }
 
