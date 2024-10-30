@@ -3,27 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Ava Rich</title>
+    <!-- Google Font Links -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1>Ava &nbspRich</h1>
+        <p>Personal Website </p>
+        <br>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about-me"><b>About Me</b></a></li>
+                <li><a href="#cs-journey"><b>My CS Journey</b></a></li>
+                <li><a href="#cs-honors"><b>CS Honors</b></a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I’m Ava, and this is my personal website. I love designing and coding cool interfaces.</p>
+    <section id="about-me">
+        <h2>&nbsp&nbspAbout Me&nbsp&nbsp</h2>
+        <br>
+        <p>Hello! My name is Ava Rich, and I live in Highland Mills, NY. I am currently a senior at Cornwall Central High School.</p>
+        <div class="activities-content">
+            <img src="images/profilepic.jpg" alt="Ava Rich" class="profile-img">
+            <h3>&nbsp<u>Activities I Love:</u>&nbsp</h3>
+            <ul>
+                <li>Learning anything Computer Science related! <br> (new languages, design elements, etc...)</li><br><br>
+                <li>Playing the violin <br>(in orchestra & in my high school's Pit Band)</li><br><br>
+                <li>Baking with my older sister <br>(we make the best cookies!)</li><br><br>
+                <li>Listening to 90s alternative music <br>(mainly No Doubt, Sublime, & Hole)</li><br><br>
+                <li>Volunteering within my community <br>(most notably with the Kiwanis organization)</li>
+            </ul>
+        </div>
     </section>
+    
+    <div class="grey-background">
+        <section id="cs-journey" class="pastproject-content">
+            <h2>&nbsp&nbspMy CS Journey&nbsp&nbsp</h2>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="content-wrapper">
+                <p> My passion for computer science started the summer before sophomore year. I had stumbled upon CS professor David Malan's lectures on YouTube and became fascinated with the subject. It was then I completed my first coding project using Scratch, a block-based programming software. I created a game centered around a teenage girl, Ruby, who starts her first day at a new school. The code is very basic, but not bad for my first time!<br>
+                </p>
+                <img src="images/Screenshot (138).png" 
+                     alt="My first project on Scratch" 
+                     class="Scratch-img">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="content-wrapper">
+                <p> Fast forward one year later, I joined <z><a href="https://girlswhocode.com/" target="_blank"><u>Girls Who Code</u></a></z>, an organization that aims to support and increase the number of women in computer science. In July, I participated in the Summer Immersion Program, which culminated in me coding a final project using JavaScript. This collection-style game was much more advanced than my previous one, and focused on restoring life to a post-apocalyptic world. Players needed to collect seeds and water buckets without clicking on zombies.<br>
+                </p>
+                <img src="images/Screenshot (149).png" alt="GWC Game Project" class="GWC-img">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="content-wrapper">
+                <p> Most recently, I submitted a website I developed to the 2025 National STEM Festival. Using HTML and CSS, as well as research I did regarding adolescent attitudes, I created a digital information hub called "NY, Let's Talk About Climate Change" to raise awareness about the escalating threat of global warming. The platform consolidates important resources and climate-related discoveries in New York and across the U.S., making it easier for adolescents to inform themselves.<br>
+                </p>
+                <img src="images/Screenshot (150).png" alt="Climate Change Information Website" class="GWC-img">
+            </div>
+            <br>
+            <x><a href="https://docs.google.com/document/d/1yq8AfOigH_RVw-XZJmFOn18tUpvAmCxS0p0kGs1ucaQ/edit?usp=sharing" target="_blank">Full Project Submission File — <u>Google Docs Link</u></a></x>
+        <br>
+        <br>
+        </section>
+    </div>
+
+    <section id="cs-honors" class="honors">
+      <h2>&nbsp&nbspCS Honors&nbsp&nbsp</h2>
+        <br>
+        <br>
+        <br>
+        <bigp><u>AiC Award Winner</u></bigp>
+        <br>
+        <br>
+        <div class="content-wrapper">
+            <xxx>The <z><b><a href="https://www.aspirations.org/" target="_blank"><u>NCWIT</u></a></z> Aspirations in Computing (AiC) Award</b> recognizes young women for their computing-related achievements and leadership. As the <b>Hudson Valley Affiliate Winner</b>, I was honored for my technical skills and passion for computer science. This award has further fueled my desire to pursue a career in web-development and create a more inclusive future in the tech community.</xxx>
+        </div>
+        <br>
+        <br>
+        <br>
+    </section>
+    
     <footer>
         <p>&copy; 2024 Ava Rich. All rights reserved.</p>
     </footer>
+    
+    <button id="backToTop">&#8679;</button>
+
+    <script>
+        // Show the button when the user scrolls down 100px from the top
+        window.onscroll = function () {
+            const button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    
+        // Scroll smoothly to the top when the button is clicked
+        document.getElementById("backToTop").onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+
 </body>
 </html>
